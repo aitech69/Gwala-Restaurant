@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gwala Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Hotel Gwala</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About Us</a>
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#order" class="w3-bar-item w3-button">Order</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="environment.jpg" alt="Hotel Gwala" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Welcome to Gwala Restaurant</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="clean environment.jpg" class="w3-round w3-image w3-opacity-min" alt="Clean Environment" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Gwala Restaurant</h1><br>
+      <p class="w3-large">Gwala Restaurant is the ultimate destination for traditional Pakistani cuisine lovers. We proudly offer a range of mouth-watering dishes and an unmatched commitment to cleanliness and comfort. Whether you're here for a casual meal or an event, we ensure a memorable experience.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Services Section -->
+  <div class="w3-row w3-padding-64" id="services">
+    <h1 class="w3-center">Our Services</h1><br>
+    <div class="w3-col m6 w3-padding-large">
+      <h4>Authentic Pakistani Dishes</h4>
+      <p class="w3-text-grey">Indulge in delicious classics like Biryani, Qorma, Mutton Soup, and Beef Karahi, prepared with love and tradition.</p><br>
+      
+      <h4>Neat and Clean Environment</h4>
+      <p class="w3-text-grey">Experience dining in a hygienic and welcoming environment that sets us apart.</p><br>
+      
+      <h4>Event Booking</h4>
+      <p class="w3-text-grey">We cater to weddings, corporate events, and private gatherings. Let us make your special day extraordinary!</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Biryani</h4>
+      <p class="w3-text-grey">Aromatic rice cooked with spices and tender meat. PKR 500</p><br>
+    
+      <h4>Qorma</h4>
+      <p class="w3-text-grey">Rich and flavorful gravy with succulent meat. PKR 450</p><br>
+    
+      <h4>Mutton Soup</h4>
+      <p class="w3-text-grey">A comforting soup made with fresh mutton and spices. PKR 400</p><br>
+    
+      <h4>Beef Karahi</h4>
+      <p class="w3-text-grey">Spicy and aromatic, cooked in a traditional wok. PKR 600</p><br>
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="dishes.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Order Section -->
+  <div class="w3-container w3-padding-64" id="order">
+    <h1>Place Your Order</h1><br>
+    <form action="/order_page.php" method="POST">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Dish Name" required name="dish"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Quantity" required name="quantity"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Address for Delivery" required name="address"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SUBMIT ORDER</button></p>
+    </form>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact Us</h1><br>
+    <p>We'd love to hear from you! Contact us to book your table or event.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Hotel Gwala, Main Street, Kuala Lumpur, Malaysia</b></p>
+    <p>Phone: +92 300 1234567 | Email: contact@hotelgwala.com</p>
+    <form action="/contact_page.php" method="POST">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Event Type (if applicable)" name="event"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message / Special Requirements" required name="message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+    <p>&copy; 2024 Gwala Restaurant. All rights reserved. Designed with care for our valued customers.</p>
+  </footer>
+  
+</body>
+</html>
